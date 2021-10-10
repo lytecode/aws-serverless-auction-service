@@ -4,6 +4,9 @@
   "description": "Serverless Framework project for Auction",
   "author": "Mbonu Basil <mbonubasil@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "deploy": "sls deploy --verbose"
+  },
   "devDependencies": {
     "babel-core": "^6.25.0",
     "babel-loader": "^7.1.1",
