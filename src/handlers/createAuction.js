@@ -9,8 +9,6 @@ import createError from "http-errors";
 const dynamodb = new AWS.DynamoDB.DocumentClient();
 
 async function createAuction(event, context) {
-  const LOG_KEY = "CREATE-AUCTION";
-
   const { title, description } = event.body;
   const date = new Date();
 
@@ -31,8 +29,10 @@ async function createAuction(event, context) {
       })
       .promise();
   } catch (error) {
-    console.log(LOG_KEY, error);
-    throw new createError.InternalServerError(error);
+    console.log(error);
+    throw new createError.InternalServerError(
+      `Request failed, please try again later`
+    );
   }
 
   return {
