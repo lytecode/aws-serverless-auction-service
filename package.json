@@ -7,7 +7,7 @@
   "scripts": {
     "deploy": "sls deploy",
     "deploy-v": "sls deploy --verbose",
-    "deploy-create": " sls deploy function createAuction --verbose"
+    "deploy-create": " sls deploy --function createAuction --verbose"
   },
   "devDependencies": {
     "babel-core": "^6.25.0",
@@ -20,7 +20,12 @@
     "webpack": "^5.58.0"
   },
   "dependencies": {
+    "@middy/core": "^2.5.2",
+    "@middy/http-error-handler": "^2.5.2",
+    "@middy/http-event-normalizer": "^2.5.2",
+    "@middy/http-json-body-parser": "^2.5.2",
     "aws-sdk": "^2.639.0",
+    "http-errors": "^1.8.0",
     "serverless": "^2.62.0",
     "uuid": "^8.3.2"
   }
