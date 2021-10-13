@@ -5,8 +5,7 @@
   "author": "Mbonu Basil <mbonubasil@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "deploy": "sls deploy",
-    "deploy-v": "sls deploy --verbose",
+    "deploy": "sls deploy --verbose",
     "deploy-create": " sls deploy --function createAuction --verbose"
   },
   "devDependencies": {
