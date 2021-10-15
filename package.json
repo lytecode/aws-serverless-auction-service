@@ -6,7 +6,8 @@
   "license": "MIT",
   "scripts": {
     "deploy": "sls deploy --verbose",
-    "deploy-create": " sls deploy --function createAuction --verbose"
+    "deploy-create": " sls deploy --function createAuction --verbose",
+    "invoke": "sls invoke -f processAuction -l"
   },
   "devDependencies": {
     "babel-core": "^6.25.0",
