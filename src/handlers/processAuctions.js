@@ -12,6 +12,7 @@ async function processAuctions(event, context) {
 
     return { closed: closePromises.length };
   } catch (error) {
+    console.log(error);
     throw new createError.InternalServerError("Couldn't close auction");
   }
 }
