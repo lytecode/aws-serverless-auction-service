@@ -4,6 +4,11 @@ A serverless auction service using serverless framework on AWS
 
 ## Getting started
 
+To setup and run this project locally
+
+Clone the repo from
+`https://github.com/lytecode/aws-serverless-auction-service.git`
+
 ```
 sls create --name YOUR_PROJECT_NAME --template-url https://github.com/codingly-io/sls-base
 cd YOUR_PROJECT_NAME
